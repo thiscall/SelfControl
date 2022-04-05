@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>about</class>
+ <widget class="QDialog" name="about">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>关于自律小助手</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="dlgBasicLy">
+     <item>
+      <widget class="QLabel" name="dlgLb2">
+       <property name="text">
+        <string>自律小助手是一个开源程序。</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="dlgLb4">
+       <property name="text">
+        <string>版本：0.0 预发布（仅基本功能）</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="dlgLb1">
+       <property name="text">
+        <string>源代码发布在Github：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="dlgLb3">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="dlgLb5">
+       <property name="text">
+        <string>Powered by Qt Framework</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="dlgLy01">
+       <item>
+        <spacer name="dlgLy01Sp1">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="dlgOK1">
+         <property name="text">
+          <string>OK</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>dlgOK1</sender>
+   <signal>clicked()</signal>
+   <receiver>about</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>173</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
